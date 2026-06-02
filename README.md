@@ -1,37 +1,35 @@
 # Delhi NCR Terrain Analysis Using QGIS
 
-## Project Overview
+## Overview
 
-This project presents terrain analysis of Delhi NCR using SRTM DEM (30 m) data in QGIS.
-
-The objective was to derive topographic information and visualize terrain characteristics through various raster-based analyses.
+This project presents a terrain analysis of Delhi NCR using SRTM Digital Elevation Model (DEM) data and QGIS. The study involves DEM preprocessing, terrain visualization, and the generation of terrain derivatives such as Hillshade, Slope, Aspect, and Elevation maps. Additionally, histogram analysis was performed to compare the original and averaged DEM surfaces.
 
 ---
 
 ## Objectives
 
-- Generate Digital Elevation Model (DEM)
-- Create Hillshade Map
-- Derive Slope Map
-- Generate Aspect Map
-- Visualize terrain characteristics of Delhi NCR
+- Perform terrain analysis using SRTM DEM data.
+- Generate Elevation, Slope, Aspect, and Hillshade maps.
+- Apply DEM smoothing through averaging.
+- Compare Original and Averaged DEM using histogram analysis.
+- Visualize and interpret terrain characteristics of Delhi NCR.
 
 ---
 
 ## Study Area
 
-Delhi NCR, India
+**Delhi NCR, India**
 
 ---
 
 ## Data Used
 
-- SRTM DEM (30 m)
+- SRTM DEM (30 m Resolution)
 - Delhi NCR Boundary Shapefile
 
 ---
 
-## Software
+## Software Used
 
 - QGIS
 - GDAL Tools
@@ -40,14 +38,16 @@ Delhi NCR, India
 
 ## Methodology
 
-1. Download SRTM DEM data
-2. Import DEM into QGIS
-3. Clip DEM using Delhi boundary
-4. Generate Hillshade raster
-5. Generate Slope raster
-6. Generate Aspect raster
-7. Design cartographic layouts
-8. Export final maps
+1. Acquire SRTM DEM data.
+2. Import DEM into QGIS.
+3. Clip DEM using Delhi NCR boundary.
+4. Generate an Averaged (Smoothed) DEM.
+5. Compare Original and Averaged DEM through histogram analysis.
+6. Generate Elevation Map.
+7. Generate Slope Map.
+8. Generate Aspect Map.
+9. Generate Hillshade Relief Map.
+10. Design cartographic layouts and export final outputs.
 
 ---
 
@@ -55,34 +55,102 @@ Delhi NCR, India
 
 ### Hillshade Relief Map
 
-
-
-### Slope Map
-
-
-
-### Aspect Map
-
-
+![Hillshade Map](Maps/Delhi_Hillshade_Map.png)
 
 ### Elevation Map
 
+![Elevation Map](Maps/Delhi_Elevation_Map.png)
 
+### Slope Map
+
+![Slope Map](Maps/Delhi_Slope_Map.png)
+
+### Aspect Map
+
+![Aspect Map](Maps/Delhi_Aspect_Map.png)
+
+### DEM Histogram Comparison
+
+![Histogram Comparison](Analysis/Histogram_Comparison.png)
 
 ---
 
-## Key Observations
+## Key Findings
 
-- Delhi is predominantly a low-relief plain.
-- The Delhi Ridge is visible as the major elevated terrain feature.
-- Southwestern portions show influence of the Aravalli system.
-- Terrain variation across the study area is generally low.
+### Terrain Characteristics
+
+- Delhi NCR is predominantly a low-relief region.
+- Most of the study area consists of flat to gently sloping terrain.
+- The Delhi Ridge is the most prominent terrain feature visible in the analysis.
+- Southwestern portions of the region show influence from the Aravalli hill system.
+- Elevation variation across the study area is relatively low.
+
+### Hillshade Analysis
+
+- Hillshade effectively highlights terrain morphology.
+- Ridges and subtle elevation variations become more visible compared to the raw DEM.
+- Terrain visualization is enhanced through simulated illumination.
+
+### Slope Analysis
+
+- Low slope values dominate most parts of Delhi NCR.
+- Higher slope values are concentrated around ridge and elevated regions.
+- Urban areas are primarily located on gently sloping terrain.
+
+### Aspect Analysis
+
+- Aspect varies according to local terrain orientation.
+- Elevated regions exhibit more distinct directional slope characteristics.
+- Aspect information can support environmental and land suitability studies.
+
+### DEM Histogram Comparison
+
+- The averaged DEM exhibits a smoother elevation distribution than the original DEM.
+- Small-scale elevation noise is reduced after averaging.
+- Major terrain characteristics remain preserved despite smoothing.
+- Extreme elevation values become less pronounced in the averaged DEM.
+- The averaging process improves surface continuity while maintaining overall terrain structure.
+- Histogram analysis demonstrates the effect of raster filtering on DEM quality and terrain representation.
+
+---
+
+## Applications
+
+- Urban Planning
+- Infrastructure Development
+- Watershed Analysis
+- Environmental Studies
+- Land Suitability Assessment
+- Disaster Management
+- Geospatial Decision Making
+
+---
+
+## Conclusion
+
+The project demonstrates the application of DEM-based terrain analysis techniques in QGIS. Through preprocessing, visualization, and terrain derivative generation, the study provides insights into the topographic characteristics of Delhi NCR. The results highlight the predominantly flat nature of the region while identifying significant terrain features such as the Delhi Ridge and Aravalli influences.
+
+---
+
+## Skills Demonstrated
+
+- Geographic Information Systems (GIS)
+- Remote Sensing
+- QGIS
+- DEM Processing
+- Terrain Analysis
+- Raster Analysis
+- Raster Filtering
+- DEM Smoothing
+- Histogram Analysis
+- Spatial Analysis
+- Cartography
+- Geospatial Visualization
 
 ---
 
 ## Author
 
-Siddharth Gupta
-
+**Siddharth Gupta**  
 B.Tech Geoinformatics  
 Netaji Subhas University of Technology (NSUT)
